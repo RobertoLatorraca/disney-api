@@ -14,19 +14,19 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTVerificationException;
 
 @Component
-@PropertySource("classpath:secrets.properties")
+@PropertySource("classpath:application.properties")
 public class JwtUtils {
 
 	public static final String TOKEN_PREFIX = "Bearer ";
 	private static String SECRET_KEY;
 	private static int EXPIRATION_TIME;
 	
-	@Value("${jwt.secret}")
+	@Value("${jwt-secret}")
 	public void setSecretKey(String secretKey) {
 	    JwtUtils.SECRET_KEY = secretKey;
 	}
 	
-	@Value("${jwt.expiration}")
+	@Value("${jwt-expiration}")
 	public void setExpirationTime(String expirationTime) {
 		JwtUtils.EXPIRATION_TIME = Integer.parseInt(expirationTime);
 	}

@@ -17,10 +17,10 @@ import com.sendgrid.helpers.mail.objects.Email;
 import ar.latorraca.disneyapi.services.exception.SendMailException;
 
 @Service
-@PropertySource("classpath:secrets.properties")
+@PropertySource("classpath:application.properties")
 public class SendGridFacadeImpl implements SendGridFacade {
 
-	@Value("${SENDGRID_API_KEY}")
+	@Value("${secret-sendgrid-api}")
 	private String SENDGRID_API_KEY;
 	
 	@Override
