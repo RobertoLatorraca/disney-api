@@ -26,7 +26,7 @@ public class SpringFoxConfiguration {
 	
 	private static final String TITLE = "Disney API Documentation";
 	private static final String DESCRPTION = "Explore the World of Disney\r\n"
-			+ "Para autenticar utilice el token: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JlcnRvQGxhdG9ycmFjYS5hciIsInJvbGUiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTY0OTAzNzQzNH0.IWKXN_pol76WtMRVUoadrQ8qwD5BW34j842gVYapfH1tkZ-FVXaLS0WMrrzyHpI8cuHlcadfBa3EBGWg3N1uFg";
+			+ "Para probar la API debe ingresar en \"Authorize\" el TOKEN que obtenga en la cabecera de la respuesta al registrarse.";
 	private static final String VERSION = "0.0.1-SNAPSHOT";
 
 	private static final Contact CONTACT = new Contact("Roberto Ariel Latorraca",
